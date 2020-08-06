@@ -13,3 +13,6 @@ RUN curl -sS https://getcomposer.org/installer -o composer-setup.php && \
 #RUN create user by id
 
 COPY ./ /var/www/app
+
+WORKDIR /var/www/app
+RUN composer install
